@@ -1,77 +1,179 @@
 [
   {
     "question": "Bagaimana cara mengisi KRS?",
-    "answer": "Pengisian KRS dilakukan secara online melalui portal akademik (SIAKAD) pada periode yang telah ditentukan oleh Bagian Akademik. Silakan login menggunakan NIM dan password Anda, lalu pilih menu 'Pengisian KRS' untuk memilih mata kuliah yang akan diambil. Pastikan Anda sudah berkonsultasi dengan dosen pembimbing akademik sebelum melakukan pengisian.",
-    "keywords": ["KRS", "kartu rencana studi", "isi KRS", "pengisian KRS", "SIAKAD", "registrasi mata kuliah"]
+    "answer": "Pengisian KRS dilakukan secara online melalui portal akademik https://krs.dinus.ac.id/ pada periode yang telah ditentukan oleh Bagian Akademik. Silakan login menggunakan NIM dan password Anda, lalu pilih menu 'Input-Edit KRS' untuk memilih mata kuliah yang akan diambil. Pastikan Anda sudah berkonsultasi dengan dosen pembimbing akademik sebelum melakukan pengisian.",
+    "keywords": [
+      "KRS",
+      "kartu rencana studi",
+      "isi KRS",
+      "pengisian KRS",
+      "registrasi mata kuliah"
+    ]
   },
   {
     "question": "Bagaimana cara melihat jadwal kuliah semester ini?",
-    "answer": "Jadwal kuliah semester ini dapat dilihat melalui portal akademik SIAKAD pada menu 'Jadwal Kuliah' setelah Anda melakukan pengisian KRS. Jadwal juga biasanya ditempel di papan pengumuman masing-masing program studi. Untuk informasi terbaru, Anda juga bisa menghubungi Tata Usaha fakultas.",
-    "keywords": ["jadwal kuliah", "jadwal semester", "jadwal kelas", "roster", "waktu kuliah"]
+    "answer": "Jadwal kuliah semester ini dapat dilihat melalui portal akademik SIADIN https://mhs.dinus.ac.id/ atau Aplikasi Dinusverse pada menu 'Jadwal Kuliah' setelah Anda melakukan pengisian KRS. Jadwal juga biasanya ditempel di papan pengumuman masing-masing program studi. Untuk informasi terbaru, Anda juga bisa menghubungi Tata Usaha fakultas.",
+    "keywords": [
+      "jadwal kuliah",
+      "jadwal semester",
+      "jadwal kelas",
+      "roster",
+      "waktu kuliah"
+    ]
   },
   {
     "question": "Di mana lokasi ruang kelas?",
-    "answer": "Lokasi ruang kelas dapat dilihat pada jadwal kuliah Anda di portal SIAKAD, yang mencantumkan gedung dan nomor ruangan. Denah kampus tersedia di website resmi universitas dan juga terpasang di setiap gedung utama. Jika masih kesulitan, silakan bertanya kepada satpam atau petugas di lobi gedung.",
-    "keywords": ["lokasi kelas", "ruang kelas", "gedung kuliah", "denah kampus", "cari ruangan"]
+    "answer": "Lokasi ruang kelas dapat dilihat pada jadwal kuliah Anda di portal akademik SIADIN https://mhs.dinus.ac.id/ atau Aplikasi Dinusverse, yang mencantumkan gedung dan nomor ruangan. Denah kampus tersedia di website resmi universitas dan juga terpasang di setiap gedung utama. Jika masih kesulitan, silakan bertanya kepada satpam atau petugas di lobi gedung.",
+    "keywords": [
+      "lokasi kelas",
+      "ruang kelas",
+      "gedung kuliah",
+      "denah kampus",
+      "cari ruangan"
+    ]
   },
   {
     "question": "Siapa dosen pengampu mata kuliah tertentu?",
-    "answer": "Informasi dosen pengampu setiap mata kuliah dapat dilihat di portal SIAKAD pada menu 'Jadwal Kuliah' atau 'Daftar Mata Kuliah'. Anda juga bisa melihat informasi ini di website program studi masing-masing. Untuk informasi lebih detail, silakan hubungi sekretariat program studi.",
-    "keywords": ["dosen", "pengampu", "dosen mata kuliah", "nama dosen", "pengajar", "dosen pembimbing"]
+    "answer": "Informasi dosen pengampu setiap mata kuliah dapat dilihat di portal akademik SIADIN https://mhs.dinus.ac.id/ atau Aplikasi Dinusverse pada menu 'Jadwal Kuliah' atau 'Daftar Mata Kuliah'. Anda juga bisa melihat informasi ini di website program studi masing-masing. Untuk informasi lebih detail, silakan hubungi sekretariat program studi.",
+    "keywords": [
+      "dosen",
+      "pengampu",
+      "dosen mata kuliah",
+      "nama dosen",
+      "pengajar",
+      "dosen pembimbing"
+    ]
   },
   {
     "question": "Bagaimana cara mengurus surat aktif kuliah?",
     "answer": "Surat keterangan aktif kuliah dapat diurus melalui Tata Usaha (TU) fakultas dengan membawa KTM dan fotokopi KRS semester berjalan. Proses pembuatan biasanya memakan waktu 1-3 hari kerja. Beberapa universitas juga menyediakan layanan pengajuan surat secara online melalui portal akademik.",
-    "keywords": ["surat aktif kuliah", "surat keterangan", "surat aktif", "surat mahasiswa", "keterangan aktif"]
+    "keywords": [
+      "surat aktif kuliah",
+      "surat keterangan",
+      "surat aktif",
+      "surat mahasiswa",
+      "keterangan aktif"
+    ]
   },
   {
     "question": "Kapan jadwal UTS dan UAS?",
-    "answer": "Jadwal Ujian Tengah Semester (UTS) biasanya dilaksanakan pada minggu ke-8 perkuliahan, sedangkan Ujian Akhir Semester (UAS) pada minggu ke-16. Jadwal lengkap dan detail ruangan ujian akan diumumkan melalui portal SIAKAD dan papan pengumuman fakultas sekitar 2 minggu sebelum pelaksanaan.",
-    "keywords": ["UTS", "UAS", "ujian tengah semester", "ujian akhir semester", "jadwal ujian", "ujian"]
+    "answer": "Jadwal Ujian Tengah Semester (UTS) biasanya dilaksanakan pada minggu ke-8 perkuliahan, sedangkan Ujian Akhir Semester (UAS) pada minggu ke-16. Jadwal lengkap dan detail ruangan ujian akan diumumkan melalui portal akademik SIADIN https://mhs.dinus.ac.id/ atau Aplikasi Dinusverse dan papan pengumuman fakultas sekitar 2 minggu sebelum pelaksanaan.",
+    "keywords": [
+      "UTS",
+      "UAS",
+      "ujian tengah semester",
+      "ujian akhir semester",
+      "jadwal ujian",
+      "ujian"
+    ]
   },
   {
     "question": "Bagaimana cara mengajukan cuti akademik?",
     "answer": "Pengajuan cuti akademik dilakukan dengan mengisi formulir cuti yang tersedia di Tata Usaha fakultas, disertai surat pernyataan alasan cuti dan persetujuan orang tua/wali. Formulir yang sudah diisi harus disetujui oleh dosen pembimbing akademik dan Dekan. Cuti akademik maksimal diberikan selama 2 semester berturut-turut.",
-    "keywords": ["cuti akademik", "cuti kuliah", "pengajuan cuti", "istirahat kuliah", "berhenti sementara"]
+    "keywords": [
+      "cuti akademik",
+      "cuti kuliah",
+      "pengajuan cuti",
+      "istirahat kuliah",
+      "berhenti sementara"
+    ]
   },
   {
     "question": "Di mana lokasi perpustakaan kampus?",
-    "answer": "Perpustakaan pusat kampus terletak di Gedung Perpustakaan Lantai 1-3, yang berada di area tengah kampus dekat dengan taman utama. Perpustakaan buka setiap hari Senin-Jumat pukul 08.00-16.00 WIB dan Sabtu pukul 08.00-12.00 WIB. Mahasiswa wajib membawa KTM untuk akses masuk dan peminjaman buku.",
-    "keywords": ["perpustakaan", "lokasi perpustakaan", "pinjam buku", "ruang baca", "library"]
+    "answer": "Perpustakaan pusat kampus terletak di Gedung A Perpustakaan Lantai 1-2, yang berada di area tengah kampus dekat dengan Gedung D. Perpustakaan buka setiap hari Senin-Jumat pukul 08.00-16.00 WIB dan Sabtu pukul 08.00-12.00 WIB. Mahasiswa wajib membawa KTM untuk akses masuk dan peminjaman buku.",
+    "keywords": [
+      "perpustakaan",
+      "lokasi perpustakaan",
+      "pinjam buku",
+      "ruang baca",
+      "library"
+    ]
   },
   {
     "question": "Kapan jam operasional Tata Usaha (TU)?",
     "answer": "Tata Usaha (TU) fakultas buka setiap hari Senin-Jumat pukul 08.00-12.00 dan 13.00-15.00 WIB. Pada hari Jumat, layanan tutup lebih awal yaitu pukul 11.00 untuk istirahat sholat Jumat dan buka kembali pukul 13.30. Disarankan untuk datang pagi hari agar pelayanan lebih cepat.",
-    "keywords": ["TU", "tata usaha", "jam operasional", "jam buka TU", "layanan administrasi", "administrasi"]
+    "keywords": [
+      "TU",
+      "tata usaha",
+      "jam operasional",
+      "jam buka TU",
+      "layanan administrasi",
+      "administrasi"
+    ]
   },
   {
     "question": "Bagaimana cara mengurus KTM?",
-    "answer": "Kartu Tanda Mahasiswa (KTM) baru dapat diurus di Biro Administrasi Akademik (BAA) dengan membawa fotokopi bukti pembayaran UKT, pas foto 3x4 sebanyak 2 lembar, dan fotokopi KTP. Untuk KTM yang hilang atau rusak, silakan buat surat pernyataan kehilangan dan ajukan permohonan cetak ulang ke BAA.",
-    "keywords": ["KTM", "kartu tanda mahasiswa", "kartu mahasiswa", "buat KTM", "cetak KTM", "KTM hilang"]
+    "answer": "Kartu Tanda Mahasiswa (KTM) baru dapat diurus di Biro Akademik dengan membawa fotokopi bukti pembayaran UKT, pas foto 3x4 sebanyak 2 lembar, dan fotokopi KTP. Untuk KTM yang hilang atau rusak, silakan buat surat pernyataan kehilangan dan ajukan permohonan cetak ulang ke Biro Akademik.",
+    "keywords": [
+      "KTM",
+      "kartu tanda mahasiswa",
+      "kartu mahasiswa",
+      "buat KTM",
+      "cetak KTM",
+      "KTM hilang"
+    ]
   },
   {
     "question": "Apa saja syarat kelulusan?",
     "answer": "Syarat kelulusan meliputi: menyelesaikan seluruh mata kuliah wajib dan pilihan sesuai kurikulum (minimal 144 SKS untuk S1), IPK minimal 2.00, lulus ujian skripsi/tugas akhir, bebas tanggungan administrasi dan perpustakaan. Mahasiswa juga wajib memenuhi syarat tambahan seperti sertifikat TOEFL dan upload jurnal ke repositori kampus.",
-    "keywords": ["syarat kelulusan", "lulus", "wisuda", "kelulusan", "SKS minimal", "IPK minimal", "yudisium"]
+    "keywords": [
+      "syarat kelulusan",
+      "lulus",
+      "wisuda",
+      "kelulusan",
+      "SKS minimal",
+      "IPK minimal",
+      "yudisium"
+    ]
   },
   {
     "question": "Bagaimana cara mengajukan proposal skripsi?",
     "answer": "Pengajuan proposal skripsi dimulai dengan berkonsultasi dengan dosen pembimbing akademik untuk menentukan topik penelitian. Setelah itu, ajukan formulir pendaftaran seminar proposal ke sekretariat program studi beserta draft proposal yang sudah disetujui dosen pembimbing. Seminar proposal biasanya dijadwalkan dalam waktu 2-4 minggu setelah pengajuan.",
-    "keywords": ["proposal skripsi", "skripsi", "tugas akhir", "seminar proposal", "ajukan skripsi", "bimbingan skripsi"]
+    "keywords": [
+      "proposal skripsi",
+      "skripsi",
+      "tugas akhir",
+      "seminar proposal",
+      "ajukan skripsi",
+      "bimbingan skripsi"
+    ]
   },
   {
     "question": "Di mana lokasi laboratorium komputer?",
-    "answer": "Laboratorium komputer utama terletak di Gedung Fakultas Teknik Lantai 2, Ruang 201-205. Lab komputer buka setiap hari Senin-Jumat pukul 08.00-16.00 WIB dan bisa digunakan di luar jam praktikum dengan menunjukkan KTM. Untuk reservasi lab di luar jadwal, silakan hubungi laboran atau kepala laboratorium.",
-    "keywords": ["lab komputer", "laboratorium komputer", "ruang komputer", "lab IT", "praktikum komputer"]
+    "answer": "Laboratorium komputer terletak di Gedung D Lantai 2-3. Lab komputer buka setiap hari Senin-Jumat pukul 08.00-16.00 WIB dan bisa digunakan di luar jam praktikum dengan menunjukkan KTM. Untuk reservasi lab di luar jadwal, silakan hubungi laboran atau kepala laboratorium.",
+    "keywords": [
+      "lab komputer",
+      "laboratorium komputer",
+      "ruang komputer",
+      "lab IT",
+      "praktikum komputer"
+    ]
   },
   {
-    "question": "Bagaimana cara mengakses e-learning?",
-    "answer": "Platform e-learning kampus dapat diakses melalui alamat elearning.kampuspintar.ac.id menggunakan akun SIAKAD Anda (NIM sebagai username). Jika belum memiliki akses atau lupa password, silakan hubungi UPT TIK di Gedung Rektorat Lantai 1 atau kirim email ke helpdesk@kampuspintar.ac.id untuk reset password.",
-    "keywords": ["e-learning", "elearning", "kuliah online", "LMS", "belajar online", "akses elearning", "login elearning"]
+    "question": "Bagaimana cara mengakses e-learning kulino?",
+    "answer": "Platform e-learning kulino kampus dapat diakses melalui alamat kulino.dinus.ac.id menggunakan akun yang diberikan Anda (NIM sebagai username). Jika belum memiliki akses atau lupa password, silakan hubungi UPT TIK di Gedung Rektorat Lantai 1 atau kirim email ke helpdesk@dinus.ac.id untuk reset password.",
+    "keywords": [
+      "e-learning",
+      "elearning",
+      "kulino",
+      "kuliah online",
+      "LMS",
+      "belajar online",
+      "akses elearning",
+      "login elearning"
+    ]
   },
   {
     "question": "Apa saja informasi beasiswa yang tersedia?",
     "answer": "Kampus menyediakan beberapa jenis beasiswa antara lain: Beasiswa Prestasi Akademik, Beasiswa Tidak Mampu (Bidikmisi/KIP-Kuliah), Beasiswa PPA, dan beasiswa dari pihak eksternal. Informasi pendaftaran dan persyaratan beasiswa diumumkan melalui website kemahasiswaan dan media sosial resmi kampus setiap awal semester. Silakan hubungi Bagian Kemahasiswaan untuk informasi lebih lanjut.",
-    "keywords": ["beasiswa", "bantuan biaya", "KIP kuliah", "Bidikmisi", "beasiswa prestasi", "PPA", "bantuan pendidikan"]
+    "keywords": [
+      "beasiswa",
+      "bantuan biaya",
+      "KIP kuliah",
+      "Bidikmisi",
+      "beasiswa prestasi",
+      "PPA",
+      "bantuan pendidikan"
+    ]
   }
 ]
