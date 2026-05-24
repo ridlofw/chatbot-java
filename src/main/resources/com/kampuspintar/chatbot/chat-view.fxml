@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.kampuspintar.chatbot.controller.ChatController"
+            prefWidth="900" prefHeight="650"
+            stylesheets="@styles/dark-theme.css">
+
+    <!-- === TOP: Header Bar === -->
+    <top>
+        <HBox styleClass="header-bar" alignment="CENTER_LEFT" spacing="12">
+            <Label text="🎓 Chatbot Kampus Pintar" styleClass="app-title"/>
+            <Region HBox.hgrow="ALWAYS"/>
+            <Label text="Mode:" styleClass="header-label"/>
+            <ComboBox fx:id="modeComboBox" styleClass="mode-combo"/>
+        </HBox>
+    </top>
+
+    <!-- === CENTER: Chat Area === -->
+    <center>
+        <ScrollPane fx:id="chatScrollPane" styleClass="chat-area"
+                    fitToWidth="true" hbarPolicy="NEVER" vbarPolicy="AS_NEEDED">
+            <VBox fx:id="chatContainer" styleClass="chat-container"
+                  spacing="10" fillWidth="true">
+                <padding>
+                    <Insets top="15" right="15" bottom="15" left="15"/>
+                </padding>
+            </VBox>
+        </ScrollPane>
+    </center>
+
+    <!-- === RIGHT: Sidebar === -->
+    <right>
+        <VBox styleClass="sidebar" prefWidth="220" spacing="0">
+            <Label text="📋 Riwayat Chat" styleClass="sidebar-title"/>
+            <ScrollPane styleClass="sidebar-scroll" fitToWidth="true"
+                        hbarPolicy="NEVER" vbarPolicy="AS_NEEDED"
+                        VBox.vgrow="ALWAYS">
+                <VBox fx:id="historyContainer" styleClass="history-container"
+                      spacing="3" fillWidth="true"/>
+            </ScrollPane>
+            <Region VBox.vgrow="SOMETIMES" minHeight="10"/>
+            <Separator>
+                <VBox.margin>
+                    <Insets left="10" right="10"/>
+                </VBox.margin>
+            </Separator>
+            <Button fx:id="adminButton" text="🔒 Admin FAQ" styleClass="admin-button"
+                    onAction="#handleAdminButton" maxWidth="Infinity">
+                <VBox.margin>
+                    <Insets top="10" right="14" bottom="14" left="14"/>
+                </VBox.margin>
+            </Button>
+        </VBox>
+    </right>
+
+    <!-- === BOTTOM: Input Area === -->
+    <bottom>
+        <HBox styleClass="input-area" spacing="10" alignment="CENTER">
+            <padding>
+                <Insets top="12" right="16" bottom="12" left="16"/>
+            </padding>
+            <TextField fx:id="inputField" styleClass="input-field"
+                       promptText="Ketik pertanyaan Anda..."
+                       HBox.hgrow="ALWAYS"
+                       onAction="#handleSendMessage"/>
+            <Button fx:id="sendButton" text="Kirim" styleClass="send-button"
+                    onAction="#handleSendMessage"/>
+        </HBox>
+    </bottom>
+
+</BorderPane>

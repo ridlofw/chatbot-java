@@ -1,0 +1,13 @@
+# Konfigurasi Chatbot Kampus Pintar
+
+# Gemini API Configuration
+# Dapatkan API Key dari Google AI Studio
+gemini.api.key=YOUR_API_KEY_HERE
+gemini.model=gemini-3.1-flash-lite
+
+# Admin Configuration
+admin.password=admin123
+
+# Application Settings
+app.name=Chatbot Kampus Pintar
+app.version=1.0
