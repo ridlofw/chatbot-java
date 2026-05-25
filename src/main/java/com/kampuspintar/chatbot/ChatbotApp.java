@@ -6,6 +6,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+import java.util.Objects;
+
 /**
  * Kelas utama aplikasi Chatbot Kampus Pintar.
  *
@@ -28,7 +30,7 @@ public class ChatbotApp extends Application {
 
         // 4. Tambahkan custom stylesheet di atas base theme
         scene.getStylesheets().add(
-                getClass().getResource("styles/dark-theme.css").toExternalForm()
+                Objects.requireNonNull(getClass().getResource("styles/dark-theme.css")).toExternalForm()
         );
 
         // 5. Konfigurasi primary stage

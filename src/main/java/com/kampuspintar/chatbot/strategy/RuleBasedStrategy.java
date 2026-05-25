@@ -23,23 +23,12 @@ import com.kampuspintar.chatbot.model.KnowledgeBase;
  * @version 1.0
  */
 public class RuleBasedStrategy implements AnsweringStrategy {
-
-    /** Referensi ke knowledge base yang berisi data FAQ */
     private final KnowledgeBase knowledgeBase;
-
-    /** Pesan fallback ketika tidak ditemukan kecocokan dalam knowledge base */
     private static final String FALLBACK_MESSAGE =
             "Maaf, saya belum bisa menjawab pertanyaan tersebut. "
             + "Silakan coba dengan kata kunci yang berbeda atau "
             + "gunakan mode API untuk jawaban yang lebih cerdas.";
 
-    /**
-     * Konstruktor RuleBasedStrategy.
-     *
-     * @param knowledgeBase Objek KnowledgeBase yang berisi data FAQ
-     *                      untuk pencarian jawaban
-     * @throws IllegalArgumentException jika knowledgeBase bernilai null
-     */
     public RuleBasedStrategy(KnowledgeBase knowledgeBase) {
         if (knowledgeBase == null) {
             throw new IllegalArgumentException("KnowledgeBase tidak boleh null.");
@@ -47,19 +36,6 @@ public class RuleBasedStrategy implements AnsweringStrategy {
         this.knowledgeBase = knowledgeBase;
     }
 
-    /**
-     * Memberikan jawaban berdasarkan pencocokan keyword dari knowledge base.
-     *
-     * <p>Proses pencarian jawaban:</p>
-     * <ol>
-     *     <li>Gunakan KnowledgeBase.searchFAQ() untuk mencari FAQ yang cocok</li>
-     *     <li>Jika ditemukan, kembalikan jawaban dari FAQ tersebut</li>
-     *     <li>Jika tidak ditemukan, kembalikan pesan fallback</li>
-     * </ol>
-     *
-     * @param question Pertanyaan dari pengguna
-     * @return Jawaban dari FAQ yang cocok, atau pesan fallback jika tidak ditemukan
-     */
     @Override
     public String getAnswer(String question) {
         // Validasi input: jika pertanyaan kosong, langsung kembalikan fallback

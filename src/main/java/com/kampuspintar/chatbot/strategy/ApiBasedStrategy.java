@@ -23,18 +23,8 @@ import com.kampuspintar.chatbot.util.ConfigManager;
  * @version 1.0
  */
 public class ApiBasedStrategy implements AnsweringStrategy {
-
-    /** Client untuk berkomunikasi dengan Google Generative AI */
     private final Client client;
-
-    /** Nama model Gemini yang digunakan (contoh: "gemini-3.1-flash-lite") */
-    private final String model;
-
-    /**
-     * System prompt yang mengarahkan AI untuk berperan sebagai
-     * Asisten AI Akademik Resmi untuk Universitas Dian Nuswantoro (UDINUS).
-     * Memiliki aturan ketat anti-jailbreak.
-     */
+    private final String model; // (contoh: "gemini-3.1-flash-lite")
     private static final String SYSTEM_PROMPT =
             "Anda adalah Asisten AI Akademik Resmi untuk Universitas Dian Nuswantoro (UDINUS) bernama 'Kampus Pintar'. "
             + "Tugas utama dan SATU-SATUNYA Anda adalah memberikan informasi yang akurat dan relevan mengenai kampus, "
@@ -57,14 +47,6 @@ public class ApiBasedStrategy implements AnsweringStrategy {
             + "Gaya bahasa Anda harus sopan, profesional, informatif, dan ringkas.\n\n"
             + "Pertanyaan: ";
 
-    /**
-     * Konstruktor ApiBasedStrategy.
-     * Menginisialisasi client Gemini AI menggunakan API key dari konfigurasi.
-     *
-     * <p>API key dibaca dari ConfigManager, yang memuat konfigurasi
-     * dari file config.properties. Jika API key tidak tersedia,
-     * client tetap diinisialisasi namun pemanggilan API akan gagal.</p>
-     */
     public ApiBasedStrategy() {
         // Ambil konfigurasi dari ConfigManager
         ConfigManager config = ConfigManager.getInstance();
@@ -77,21 +59,6 @@ public class ApiBasedStrategy implements AnsweringStrategy {
                 .build();
     }
 
-    /**
-     * Memberikan jawaban menggunakan Gemini AI API.
-     *
-     * <p>Proses menjawab pertanyaan:</p>
-     * <ol>
-     *     <li>Gabungkan system prompt dengan pertanyaan pengguna</li>
-     *     <li>Kirim prompt ke model Gemini melalui API</li>
-     *     <li>Ambil teks respons dari hasil generate content</li>
-     *     <li>Jika respons kosong, kembalikan pesan fallback</li>
-     *     <li>Jika terjadi error, kembalikan pesan error yang informatif</li>
-     * </ol>
-     *
-     * @param question Pertanyaan dari pengguna
-     * @return Jawaban dari AI, atau pesan error jika terjadi kesalahan
-     */
     @Override
     public String getAnswer(String question) {
         // Validasi input

@@ -34,24 +34,10 @@ import java.util.stream.Collectors;
  * @version 1.0
  */
 public class KnowledgeBase {
-
-    /** Daftar FAQ yang dimuat dalam memori */
     private List<FAQ> faqList;
-
-    /** Instance Gson untuk serialisasi/deserialisasi JSON */
     private final Gson gson;
-
-    /** Path ke file JSON tempat FAQ disimpan */
     private String filePath;
 
-    /**
-     * Konstruktor KnowledgeBase.
-     * Menginisialisasi Gson dengan format pretty printing dan memuat
-     * data FAQ dari file yang ditentukan. Jika file tidak ditemukan,
-     * akan dibuat daftar FAQ kosong.
-     *
-     * @param filePath Path ke file JSON yang menyimpan data FAQ
-     */
     public KnowledgeBase(String filePath) {
         // Inisialisasi Gson dengan pretty printing agar file JSON mudah dibaca
         this.gson = new GsonBuilder().setPrettyPrinting().create();
@@ -62,11 +48,6 @@ public class KnowledgeBase {
         loadFromFile();
     }
 
-    /**
-     * Memuat data FAQ dari file JSON ke dalam memori.
-     * Jika file tidak ditemukan atau terjadi error saat membaca,
-     * daftar FAQ akan diinisialisasi sebagai list kosong.
-     */
     public void loadFromFile() {
         Path path = Paths.get(filePath);
 
@@ -96,10 +77,6 @@ public class KnowledgeBase {
         }
     }
 
-    /**
-     * Menyimpan daftar FAQ dari memori ke file JSON.
-     * Direktori induk akan dibuat secara otomatis jika belum ada.
-     */
     public void saveToFile() {
         Path path = Paths.get(filePath);
 
@@ -121,43 +98,23 @@ public class KnowledgeBase {
         }
     }
 
-    /**
-     * Menambahkan FAQ baru ke knowledge base dan menyimpan perubahan ke file.
-     *
-     * @param faq Objek FAQ yang akan ditambahkan
-     * @throws IllegalArgumentException jika parameter faq bernilai null
-     */
     public void addFAQ(FAQ faq) {
-        if (faq == null) {
-            throw new IllegalArgumentException("FAQ tidak boleh null.");
-        }
+        if (faq == null) throw new IllegalArgumentException("FAQ tidak boleh null.");
+
         faqList.add(faq);
         saveToFile();
     }
 
-    /**
-     * Menghapus FAQ berdasarkan indeks dari knowledge base dan menyimpan perubahan.
-     *
-     * @param index Indeks FAQ yang akan dihapus (dimulai dari 0)
-     * @throws IndexOutOfBoundsException jika indeks di luar rentang yang valid
-     */
     public void removeFAQ(int index) {
         if (index < 0 || index >= faqList.size()) {
-            throw new IndexOutOfBoundsException(
-                    "Indeks " + index + " di luar rentang. Jumlah FAQ: " + faqList.size());
+            String message = "Indeks " + index + " di luar rentang. Jumlah FAQ: " + faqList.size();
+            throw new IndexOutOfBoundsException(message);
         }
+
         faqList.remove(index);
         saveToFile();
     }
 
-    /**
-     * Memperbarui FAQ pada indeks tertentu dan menyimpan perubahan ke file.
-     *
-     * @param index Indeks FAQ yang akan diperbarui (dimulai dari 0)
-     * @param faq   Objek FAQ baru yang akan menggantikan FAQ lama
-     * @throws IndexOutOfBoundsException jika indeks di luar rentang yang valid
-     * @throws IllegalArgumentException  jika parameter faq bernilai null
-     */
     public void updateFAQ(int index, FAQ faq) {
         if (index < 0 || index >= faqList.size()) {
             throw new IndexOutOfBoundsException(
@@ -170,31 +127,10 @@ public class KnowledgeBase {
         saveToFile();
     }
 
-    /**
-     * Mendapatkan salinan daftar semua FAQ dalam knowledge base.
-     * Mengembalikan salinan untuk mencegah modifikasi langsung dari luar.
-     *
-     * @return Salinan daftar FAQ
-     */
     public List<FAQ> getAllFAQs() {
         return new ArrayList<>(faqList);
     }
 
-    /**
-     * Mencari FAQ yang paling relevan berdasarkan pencocokan keyword dari query.
-     *
-     * <p>Algoritma pencarian:</p>
-     * <ol>
-     *     <li>Normalisasi query ke huruf kecil (lowercase)</li>
-     *     <li>Pecah query menjadi kata-kata individual</li>
-     *     <li>Untuk setiap FAQ, hitung berapa keyword-nya yang cocok dengan kata-kata query</li>
-     *     <li>Kembalikan FAQ dengan skor kecocokan tertinggi (minimal 1 keyword cocok)</li>
-     *     <li>Jika tidak ada kecocokan, kembalikan null</li>
-     * </ol>
-     *
-     * @param query Pertanyaan/query dari pengguna
-     * @return FAQ yang paling relevan, atau null jika tidak ditemukan kecocokan
-     */
     public FAQ searchFAQ(String query) {
         // Validasi input: jika query kosong atau null, tidak ada hasil
         if (query == null || query.trim().isEmpty()) {
@@ -205,7 +141,8 @@ public class KnowledgeBase {
         String normalizedQuery = query.toLowerCase().trim();
 
         // Langkah 2: Pecah query menjadi set kata-kata unik
-        Set<String> queryWords = Arrays.stream(normalizedQuery.split("\\s+"))
+        Set<String> queryWords = Arrays
+                .stream(normalizedQuery.split("\\s+"))
                 .collect(Collectors.toSet());
 
         FAQ bestMatch = null;
