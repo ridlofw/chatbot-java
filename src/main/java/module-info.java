@@ -5,6 +5,7 @@ module com.kampuspintar.chatbot {
     requires atlantafx.base;
     requires com.google.gson;
     requires google.genai;
+    requires com.google.common;
 
     opens com.kampuspintar.chatbot to javafx.fxml;
     opens com.kampuspintar.chatbot.controller to javafx.fxml;

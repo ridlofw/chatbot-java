@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<StackPane prefHeight="650"
+           prefWidth="900"
+           styleClass="auth-root"
+           stylesheets="@styles/dark-theme.css"
+           xmlns="http://javafx.com/javafx/17.0.12"
+           xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="com.kampuspintar.chatbot.controller.AuthController">
+
+    <VBox alignment="CENTER" maxWidth="400" prefWidth="400.0" spacing="0">
+
+        <!-- Header -->
+        <VBox alignment="CENTER" spacing="8">
+            <Label styleClass="auth-logo" text="🎓" />
+            <Label styleClass="app-title" text="Kampus Pintar" />
+            <Label styleClass="auth-subtitle" text="Masuk untuk melanjutkan" />
+        </VBox>
+
+        <!-- Form Fields -->
+        <VBox spacing="14" styleClass="auth-form">
+
+            <VBox spacing="4">
+                <Label styleClass="auth-field-label" text="Username" />
+                <TextField fx:id="usernameField" onAction="#handleLogin" promptText="Masukkan username Anda..." styleClass="input-field" />
+            </VBox>
+
+            <VBox spacing="4">
+                <Label styleClass="auth-field-label" text="Password" />
+                <PasswordField fx:id="passwordField" onAction="#handleLogin" promptText="Masukkan password Anda..." styleClass="input-field" />
+            </VBox>
+
+            <Label fx:id="errorLabel" managed="false" styleClass="auth-error-label" text="" visible="false" wrapText="true" />
+
+        </VBox>
+
+        <!-- Login Button -->
+        <VBox styleClass="auth-actions">
+            <Button fx:id="loginButton" defaultButton="true" maxWidth="Infinity" onAction="#handleLogin" styleClass="btn-login" text="🔑  Masuk" />
+        </VBox>
+
+        <!-- Footer -->
+        <Label maxWidth="Infinity" styleClass="auth-footer" text="Kampus Pintar © 2025" />
+        <Region minHeight="24"/>
+
+        <Button fx:id="adminButton" text="🔒 Admin FAQ" styleClass="admin-button"
+                onAction="#handleAdminButton" maxWidth="180">
+            <VBox.margin>
+                <Insets top="10" right="14" bottom="14" left="14"/>
+            </VBox.margin>
+        </Button>
+
+    </VBox>
+
+</StackPane>

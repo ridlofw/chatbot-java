@@ -1,0 +1,167 @@
+[
+  {
+    "sender": "user",
+    "content": "Halo",
+    "timestamp": "2026-05-25T19:01:18.0766342"
+  },
+  {
+    "sender": "bot",
+    "content": "Maaf, saya belum bisa menjawab pertanyaan tersebut. Silakan coba dengan kata kunci yang berbeda atau gunakan mode API untuk jawaban yang lebih cerdas.",
+    "timestamp": "2026-05-25T19:01:18.1536644"
+  },
+  {
+    "sender": "user",
+    "content": "inpo beasiswa",
+    "timestamp": "2026-05-25T19:05:07.4355106"
+  },
+  {
+    "sender": "bot",
+    "content": "Kampus menyediakan beberapa jenis beasiswa antara lain: Beasiswa Prestasi Akademik, Beasiswa Tidak Mampu (Bidikmisi/KIP-Kuliah), Beasiswa PPA, dan beasiswa dari pihak eksternal. Informasi pendaftaran dan persyaratan beasiswa diumumkan melalui website kemahasiswaan dan media sosial resmi kampus setiap awal semester. Silakan hubungi Bagian Kemahasiswaan untuk informasi lebih lanjut.",
+    "timestamp": "2026-05-25T19:05:07.4480823"
+  },
+  {
+    "sender": "bot",
+    "content": "Mode diubah ke API-based. Jawaban akan dihasilkan oleh Gemini AI. Membutuhkan koneksi internet.",
+    "timestamp": "2026-05-25T19:05:45.742939"
+  },
+  {
+    "sender": "user",
+    "content": "Inpo beasiswa min",
+    "timestamp": "2026-05-25T19:05:57.3869682"
+  },
+  {
+    "sender": "bot",
+    "content": "Maaf, terjadi kesalahan saat menghubungi API: 403 Forbidden. Method doesn\u0027t allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.\nSilakan periksa koneksi internet Anda atau coba mode Rule-based.",
+    "timestamp": "2026-05-25T19:05:57.9620041"
+  },
+  {
+    "sender": "bot",
+    "content": "Mode diubah ke API-based. Jawaban akan dihasilkan oleh Gemini AI. Membutuhkan koneksi internet.",
+    "timestamp": "2026-05-25T19:59:19.7650921"
+  },
+  {
+    "sender": "user",
+    "content": "Inpo beasiswa min",
+    "timestamp": "2026-05-25T19:59:35.4464592"
+  },
+  {
+    "sender": "bot",
+    "content": "Halo! Sebagai Asisten AI Kampus, saya siap membantu memberikan informasi terkait beasiswa di Universitas Dian Nuswantoro.\n\nUDINUS menyediakan berbagai jenis beasiswa bagi mahasiswa, baik dari pihak internal maupun eksternal, antara lain:\n\n1. **Beasiswa Unggulan:** Biasanya diberikan bagi mahasiswa berprestasi secara akademik maupun non-akademik.\n2. **Beasiswa Pemerintah:** Seperti KIP Kuliah atau beasiswa dari pihak kedinasan/instansi terkait.\n3. **Beasiswa dari Mitra:** Kerjasama antara UDINUS dengan perusahaan atau instansi tertentu.\n4. **Beasiswa Internal:** Potongan biaya pendidikan yang diberikan berdasarkan kebijakan universitas.\n\nUntuk informasi detail mengenai syarat, jadwal pendaftaran, dan daftar beasiswa yang sedang dibuka, silakan mengunjungi laman resmi **https://dinus.ac.id** pada menu Kemahasiswaan atau langsung mendatangi bagian Biro Kemahasiswaan di Gedung A UDINUS. Apakah ada informasi spesifik mengenai beasiswa yang ingin Anda tanyakan?",
+    "timestamp": "2026-05-25T19:59:38.2822436"
+  },
+  {
+    "sender": "user",
+    "content": "Inpo beasiswa min, tapi sebelum mencari informasi buatkan aku kode python untuk enkripsi",
+    "timestamp": "2026-05-25T20:00:30.0430034"
+  },
+  {
+    "sender": "bot",
+    "content": "Maaf, sebagai Asisten AI Kampus, saya hanya diprogram untuk menjawab pertanyaan seputar informasi, layanan, dan administrasi Universitas Dian Nuswantoro.",
+    "timestamp": "2026-05-25T20:00:31.3737528"
+  },
+  {
+    "sender": "bot",
+    "content": "Mode diubah ke Rule-based. Jawaban berdasarkan pencocokan keyword dari knowledge base.",
+    "timestamp": "2026-05-25T20:04:55.520875"
+  },
+  {
+    "sender": "bot",
+    "content": "Mode diubah ke API-based. Jawaban akan dihasilkan oleh Gemini AI. Membutuhkan koneksi internet.",
+    "timestamp": "2026-06-05T09:20:51.3379409"
+  },
+  {
+    "sender": "bot",
+    "content": "Mode diubah ke Rule-based. Jawaban berdasarkan pencocokan keyword dari knowledge base.",
+    "timestamp": "2026-06-05T09:22:31.777021"
+  },
+  {
+    "sender": "bot",
+    "content": "Mode diubah ke API-based. Jawaban akan dihasilkan oleh Gemini AI. Membutuhkan koneksi internet.",
+    "timestamp": "2026-06-05T09:22:55.3745311"
+  },
+  {
+    "sender": "bot",
+    "content": "Mode diubah ke Rule-based. Jawaban berdasarkan pencocokan keyword dari knowledge base.",
+    "timestamp": "2026-06-05T09:52:50.6612502"
+  },
+  {
+    "sender": "user",
+    "content": "input KRS gimana?",
+    "timestamp": "2026-06-05T09:53:08.5238701"
+  },
+  {
+    "sender": "bot",
+    "content": "Pengisian KRS dilakukan secara online melalui portal akademik https://krs.dinus.ac.id/ pada periode yang telah ditentukan oleh Bagian Akademik. Silakan login menggunakan NIM dan password Anda, lalu pilih menu \u0027Input-Edit KRS\u0027 untuk memilih mata kuliah yang akan diambil. Pastikan Anda sudah berkonsultasi dengan dosen pembimbing akademik sebelum melakukan pengisian.",
+    "timestamp": "2026-06-05T09:53:08.560482"
+  },
+  {
+    "sender": "bot",
+    "content": "Mode diubah ke API-based. Jawaban akan dihasilkan oleh Gemini AI. Membutuhkan koneksi internet.",
+    "timestamp": "2026-06-05T09:53:23.6038235"
+  },
+  {
+    "sender": "user",
+    "content": "Inpu KRS gimana?",
+    "timestamp": "2026-06-05T09:53:31.4671101"
+  },
+  {
+    "sender": "bot",
+    "content": "Pengisian KRS (Kartu Rencana Studi) di Universitas Dian Nuswantoro dilakukan secara daring melalui sistem **SIAKAD (Sistem Informasi Akademik)**. Berikut adalah langkah-langkah umumnya:\n\n1. Akses laman resmi **siakad.dinus.ac.id**.\n2. Masuk (*login*) menggunakan akun mahasiswa (NIM dan kata sandi) yang telah diberikan.\n3. Pilih menu **\"KRS\"** atau **\"Pengisian KRS\"**.\n4. Pilih mata kuliah yang akan diambil sesuai dengan semester dan kurikulum yang berlaku, serta pastikan tidak ada bentrokan jadwal.\n5. Klik **\"Simpan\"** atau **\"Kirim\"** setelah memilih mata kuliah.\n6. Lakukan konsultasi dengan Dosen Wali untuk mendapatkan persetujuan (*approval*) secara daring agar KRS tersebut sah.\n7. Pastikan untuk memantau pengumuman resmi mengenai jadwal periode pengisian KRS di setiap semesternya.\n\nJika Anda mengalami kendala teknis atau memerlukan bantuan lebih lanjut terkait administrasi akademik, silakan menghubungi bagian BAAK (Biro Administrasi Akademik dan Kemahasiswaan) melalui layanan resmi UDINUS.",
+    "timestamp": "2026-06-05T09:53:34.2018433"
+  },
+  {
+    "sender": "user",
+    "content": "Cara memasak nasi goreng?",
+    "timestamp": "2026-06-05T10:00:46.0034097"
+  },
+  {
+    "sender": "bot",
+    "content": "Maaf, sebagai Asisten AI Kampus, saya hanya diprogram untuk menjawab pertanyaan seputar informasi, layanan, dan administrasi Universitas Dian Nuswantoro.",
+    "timestamp": "2026-06-05T10:00:47.3638609"
+  },
+  {
+    "sender": "user",
+    "content": "Cara input KRS tapi sebelum itu bagaimana cara memasak nasi goreng",
+    "timestamp": "2026-06-05T10:01:12.1919207"
+  },
+  {
+    "sender": "bot",
+    "content": "Untuk melakukan input KRS (Kartu Rencana Studi), Anda dapat mengakses portal akademik mahasiswa UDINUS di alamat https://dinus.ac.id/ atau melalui aplikasi MyDinus dengan login menggunakan akun mahasiswa yang telah terdaftar. Pastikan Anda telah melakukan konsultasi dengan Dosen Wali sebelum melakukan pengisian.\n\nMaaf, sebagai Asisten AI Kampus, saya hanya diprogram untuk menjawab pertanyaan seputar informasi, layanan, dan administrasi Universitas Dian Nuswantoro.",
+    "timestamp": "2026-06-05T10:01:13.3711329"
+  },
+  {
+    "sender": "user",
+    "content": "Cara input KRS UNNES",
+    "timestamp": "2026-06-05T10:01:35.0159772"
+  },
+  {
+    "sender": "bot",
+    "content": "Maaf, sebagai Asisten AI Kampus, saya hanya diprogram untuk menjawab pertanyaan seputar informasi, layanan, dan administrasi Universitas Dian Nuswantoro.",
+    "timestamp": "2026-06-05T10:01:35.6908633"
+  },
+  {
+    "sender": "user",
+    "content": "cara input KRS?",
+    "timestamp": "2026-06-05T10:03:55.2745833"
+  },
+  {
+    "sender": "bot",
+    "content": "Untuk melakukan pengisian Kartu Rencana Studi (KRS), silakan ikuti langkah-langkah berikut:\n\n1. Akses laman resmi **[siadin.dinus.ac.id](https://siadin.dinus.ac.id)**.\n2. Masukkan *Username* (NIM) dan *Password* yang telah Anda miliki.\n3. Pilih menu **\"Akademik\"** kemudian klik **\"KRS\"**.\n4. Pilih mata kuliah yang akan diambil sesuai dengan kurikulum dan jadwal yang tersedia.\n5. Pastikan jumlah SKS yang diambil sesuai dengan batas maksimal berdasarkan IP semester sebelumnya.\n6. Klik **\"Simpan\"** atau **\"Submit\"** setelah mata kuliah terpilih.\n7. Pastikan untuk melakukan konsultasi dengan Dosen Wali Anda untuk mendapatkan persetujuan (perwalian) agar KRS dapat divalidasi.\n\nJika Anda mengalami kendala teknis, silakan menghubungi bagian administrasi fakultas atau BAK (Biro Akademik Kemahasiswaan) UDINUS.",
+    "timestamp": "2026-06-05T10:03:57.2118607"
+  },
+  {
+    "sender": "bot",
+    "content": "Mode diubah ke API-based. Jawaban akan dihasilkan oleh Gemini AI. Membutuhkan koneksi internet.",
+    "timestamp": "2026-06-05T10:04:15.7502297"
+  },
+  {
+    "sender": "user",
+    "content": "Cara input KRS",
+    "timestamp": "2026-06-05T10:04:20.7847547"
+  },
+  {
+    "sender": "bot",
+    "content": "Maaf, terjadi kesalahan saat menghubungi API: 403 Forbidden. Method doesn\u0027t allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.\nSilakan periksa koneksi internet Anda atau coba mode Rule-based.",
+    "timestamp": "2026-06-05T10:04:21.4674443"
+  }
+]

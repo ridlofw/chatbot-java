@@ -16,41 +16,40 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Mengelola penyimpanan dan pemuatan riwayat chat.
+ * Mengelola penyimpanan dan pemuatan riwayat chat spesifik per akun pengguna.
  * Data disimpan dalam format JSON ke file lokal untuk persistensi.
  *
  * <p>Kelas ini menyediakan fungsionalitas untuk:</p>
  * <ul>
- *     <li>Menyimpan daftar pesan chat ke file JSON</li>
- *     <li>Memuat riwayat chat dari file JSON</li>
- *     <li>Menghapus semua riwayat chat</li>
+ * <li>Menyimpan daftar pesan chat ke file JSON berdasarkan user</li>
+ * <li>Memuat riwayat chat dari file JSON milik user tertentu</li>
+ * <li>Menghapus semua riwayat chat user terkait</li>
  * </ul>
  *
- * <p>File riwayat chat disimpan di lokasi {@code data/chat_history.json}
- * relatif terhadap direktori kerja aplikasi.</p>
- *
  * @author Kampus Pintar Team
- * @version 1.0
+ * @version 1.1
  */
 public class ChatHistoryManager {
 
-    /** Path relatif ke file penyimpanan riwayat chat */
-    private static final String HISTORY_FILE = "data/chat_history.json";
+    /** Path relatif ke file penyimpanan riwayat chat yang dinamis sesuai user */
+    private final String historyFile;
 
     /** Instance Gson untuk serialisasi/deserialisasi JSON */
     private final Gson gson;
 
     /**
      * Konstruktor ChatHistoryManager.
-     * Menginisialisasi Gson dengan format pretty printing agar
-     * file JSON yang dihasilkan mudah dibaca oleh manusia.
+     * Menginisialisasi nama file riwayat chat secara spesifik berdasarkan nama pengguna.
+     * Menggunakan format pretty printing agar file JSON mudah dibaca oleh manusia.
+     * * @param username Nama pengguna (akun) yang sedang aktif digunakan
      */
-    public ChatHistoryManager() {
+    public ChatHistoryManager(String username) {
         this.gson = new GsonBuilder().setPrettyPrinting().create();
+        this.historyFile = "data/history_" + username + ".json";
     }
 
     /**
-     * Menyimpan daftar pesan chat ke file JSON.
+     * Menyimpan daftar pesan chat ke file JSON milik user aktif.
      * Direktori induk akan dibuat secara otomatis jika belum ada.
      *
      * <p>Jika parameter messages bernilai null, akan disimpan
@@ -59,7 +58,7 @@ public class ChatHistoryManager {
      * @param messages Daftar pesan chat yang akan disimpan
      */
     public void saveHistory(List<ChatMessage> messages) {
-        Path path = Paths.get(HISTORY_FILE);
+        Path path = Paths.get(this.historyFile);
 
         try {
             // Buat direktori induk jika belum ada (misalnya folder "data/")
@@ -77,7 +76,7 @@ public class ChatHistoryManager {
             }
 
             System.out.println("[ChatHistoryManager] Berhasil menyimpan "
-                    + toSave.size() + " pesan ke riwayat.");
+                    + toSave.size() + " pesan ke riwayat (" + this.historyFile + ").");
 
         } catch (IOException e) {
             System.err.println("[ChatHistoryManager] Error saat menyimpan riwayat chat: "
@@ -86,19 +85,19 @@ public class ChatHistoryManager {
     }
 
     /**
-     * Memuat riwayat chat dari file JSON.
+     * Memuat riwayat chat dari file JSON milik user aktif.
      * Jika file tidak ditemukan atau terjadi error saat membaca,
      * akan mengembalikan list kosong.
      *
      * @return Daftar pesan chat dari riwayat, atau list kosong jika file tidak ada
      */
     public List<ChatMessage> loadHistory() {
-        Path path = Paths.get(HISTORY_FILE);
+        Path path = Paths.get(this.historyFile);
 
         // Periksa apakah file riwayat ada
         if (!Files.exists(path)) {
-            System.out.println("[ChatHistoryManager] File riwayat tidak ditemukan. "
-                    + "Mengembalikan list kosong.");
+            System.out.println("[ChatHistoryManager] File riwayat " + this.historyFile
+                    + " tidak ditemukan. Mengembalikan list kosong.");
             return new ArrayList<>();
         }
 
@@ -110,7 +109,7 @@ public class ChatHistoryManager {
             // Pastikan hasil deserialisasi tidak null
             if (messages != null) {
                 System.out.println("[ChatHistoryManager] Berhasil memuat "
-                        + messages.size() + " pesan dari riwayat.");
+                        + messages.size() + " pesan dari riwayat (" + this.historyFile + ").");
                 return messages;
             }
 
@@ -128,12 +127,12 @@ public class ChatHistoryManager {
     }
 
     /**
-     * Menghapus semua riwayat chat.
+     * Menghapus semua riwayat chat milik user aktif.
      * Implementasi dilakukan dengan menyimpan list kosong ke file,
      * sehingga file tetap ada namun isinya kosong.
      */
     public void clearHistory() {
         saveHistory(new ArrayList<>());
-        System.out.println("[ChatHistoryManager] Riwayat chat berhasil dihapus.");
+        System.out.println("[ChatHistoryManager] Riwayat chat untuk " + this.historyFile + " berhasil dihapus.");
     }
 }
