@@ -674,3 +674,141 @@
     -fx-font-style: italic;
     -fx-padding: 2 0 0 0;
 }
+
+/* ================================================================
+   AUTH VIEW
+   Style terinspirasi dari header-bar & send-button yang sudah ada.
+   Gradient, pill inputs, dan blue glow tetap konsisten.
+================================================================ */
+
+.auth-root {
+    -fx-background-color: linear-gradient(to bottom right, #1a1a2e, #16213e, #0f3460);
+}
+
+.auth-panel {
+    -fx-background-color: -surface-color;
+    -fx-background-radius: 16;
+    -fx-border-color: -border-color;
+    -fx-border-radius: 16;
+    -fx-border-width: 1;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.55), 32, 0.05, 0, 10);
+}
+
+/* Header card — gradient sama persis dengan header-bar */
+.auth-header {
+    -fx-background-color: linear-gradient(to right, #1a1a2e, #16213e, #0f3460);
+    -fx-background-radius: 16 16 0 0;
+    -fx-padding: 38 36 30 36;
+    -fx-alignment: CENTER;
+    -fx-spacing: 6;
+    -fx-border-color: transparent transparent -border-color transparent;
+    -fx-border-width: 0 0 1.5 0;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 8, 0, 0, 3);
+}
+
+.auth-logo {
+    -fx-font-size: 46px;
+    -fx-effect: dropshadow(gaussian, rgba(67, 97, 238, 0.6), 10, 0, 0, 2);
+}
+
+/* Reuse app-title untuk judul utama, tambahan auth-subtitle */
+.auth-subtitle {
+    -fx-text-fill: -primary-light;
+    -fx-font-size: 13px;
+    -fx-font-style: italic;
+}
+
+/* Form area */
+.auth-form {
+    -fx-padding: 26 32 10 32;
+    -fx-spacing: 14;
+}
+
+.auth-field-label {
+    -fx-text-fill: -text-secondary;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-padding: 0 0 2 4;
+}
+
+/* Error banner — warna dari -error-color yang sudah ada di root */
+.auth-error-label {
+    -fx-text-fill: -error-color;
+    -fx-font-size: 12px;
+    -fx-background-color: rgba(239, 71, 111, 0.12);
+    -fx-background-radius: 8;
+    -fx-border-color: rgba(239, 71, 111, 0.30);
+    -fx-border-radius: 8;
+    -fx-border-width: 1;
+    -fx-padding: 8 12 8 12;
+}
+
+/* Action area */
+.auth-actions {
+    -fx-padding: 18 32 26 32;
+    -fx-spacing: 10;
+}
+
+/* Login button — identik dengan send-button, hanya ukuran disesuaikan */
+.btn-login {
+    -fx-background-color: linear-gradient(to right, #4361ee, #3a56d4);
+    -fx-background-radius: 20;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 12 0 12 0;
+    -fx-pref-height: 44;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(67, 97, 238, 0.40), 8, 0, 1, 3);
+}
+
+.btn-login:hover {
+    -fx-background-color: linear-gradient(to right, #5a7bff, #4a6aee);
+    -fx-effect: dropshadow(gaussian, rgba(67, 97, 238, 0.60), 12, 0, 1, 4);
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+}
+
+.btn-login:pressed {
+    -fx-background-color: linear-gradient(to right, #3a4fcc, #2e44b5);
+    -fx-scale-x: 0.98;
+    -fx-scale-y: 0.98;
+    -fx-effect: dropshadow(gaussian, rgba(67, 97, 238, 0.20), 2, 0, 0, 1);
+}
+
+/* Footer */
+.auth-footer {
+    -fx-text-fill: -border-light;
+    -fx-font-size: 11px;
+    -fx-alignment: CENTER;
+    -fx-padding: 0 0 22 0;
+}
+
+
+.logout-button {
+    -fx-background-color: -surface-color;
+    -fx-background-radius: 10;
+    -fx-border-color: -error-color;
+    -fx-border-radius: 10;
+    -fx-border-width: 1;
+    -fx-text-fill: #ef4444;
+    -fx-font-size: 12.5px;
+    -fx-padding: 8 16 8 16;
+    -fx-cursor: hand;
+    -fx-pref-width: 190;
+    -fx-alignment: CENTER;
+}
+
+.logout-button:hover {
+    -fx-background-color: linear-gradient(to right, #7209b7, #560bad);
+    -fx-text-fill: white;
+    -fx-border-color: #7209b7;
+    -fx-effect: dropshadow(gaussian, rgba(114, 9, 183, 0.3), 6, 0, 0, 2);
+}
+
+.logout-button:pressed {
+    -fx-background-color: linear-gradient(to right, #560bad, #480996);
+    -fx-text-fill: white;
+    -fx-scale-x: 0.97;
+    -fx-scale-y: 0.97;
+}

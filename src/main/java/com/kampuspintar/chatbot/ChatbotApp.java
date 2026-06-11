@@ -23,7 +23,7 @@ public class ChatbotApp extends Application {
         Application.setUserAgentStylesheet(new CupertinoDark().getUserAgentStylesheet());
 
         // 2. Muat layout FXML utama
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("chat-view.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("auth-view.fxml"));
 
         // 3. Buat scene dengan ukuran default
         Scene scene = new Scene(loader.load(), 900, 650);
