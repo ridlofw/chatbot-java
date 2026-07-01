@@ -88,8 +88,7 @@ public class ApiBasedStrategy implements AnsweringStrategy {
 
         } catch (Exception e) {
             // Tangani semua jenis error dan berikan pesan yang informatif
-            return "Maaf, terjadi kesalahan saat menghubungi API: " + e.getMessage()
-                    + "\nSilakan periksa koneksi internet Anda atau coba mode Rule-based.";
+            return "Maaf, terjadi kesalahan saat menghubungi API: Silakan periksa koneksi internet Anda atau coba mode Rule-based.";
         }
     }
 }

@@ -163,5 +163,50 @@
     "sender": "bot",
     "content": "Maaf, terjadi kesalahan saat menghubungi API: 403 Forbidden. Method doesn\u0027t allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.\nSilakan periksa koneksi internet Anda atau coba mode Rule-based.",
     "timestamp": "2026-06-05T10:04:21.4674443"
+  },
+  {
+    "sender": "bot",
+    "content": "Mode diubah ke API-based. Jawaban akan dihasilkan oleh Gemini AI. Membutuhkan koneksi internet.",
+    "timestamp": "2026-06-11T18:51:14.5874589"
+  },
+  {
+    "sender": "bot",
+    "content": "Mode diubah ke API-based. Jawaban akan dihasilkan oleh Gemini AI. Membutuhkan koneksi internet.",
+    "timestamp": "2026-06-15T14:14:52.539327"
+  },
+  {
+    "sender": "user",
+    "content": "Test",
+    "timestamp": "2026-06-15T14:14:56.2048685"
+  },
+  {
+    "sender": "bot",
+    "content": "Maaf, terjadi kesalahan saat menghubungi API: 403 Forbidden. Method doesn\u0027t allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.\nSilakan periksa koneksi internet Anda atau coba mode Rule-based.",
+    "timestamp": "2026-06-15T14:14:57.189813"
+  },
+  {
+    "sender": "bot",
+    "content": "Mode diubah ke Rule-based. Jawaban berdasarkan pencocokan keyword dari knowledge base.",
+    "timestamp": "2026-06-15T14:15:14.8459559"
+  },
+  {
+    "sender": "bot",
+    "content": "Mode diubah ke API-based. Jawaban akan dihasilkan oleh Gemini AI. Membutuhkan koneksi internet.",
+    "timestamp": "2026-06-15T14:15:24.3064536"
+  },
+  {
+    "sender": "bot",
+    "content": "Mode diubah ke API-based. Jawaban akan dihasilkan oleh Gemini AI. Membutuhkan koneksi internet.",
+    "timestamp": "2026-06-15T14:16:27.2538376"
+  },
+  {
+    "sender": "user",
+    "content": "Test",
+    "timestamp": "2026-06-15T14:16:31.7099678"
+  },
+  {
+    "sender": "bot",
+    "content": "Maaf, terjadi kesalahan saat menghubungi API: Silakan periksa koneksi internet Anda atau coba mode Rule-based.",
+    "timestamp": "2026-06-15T14:16:32.630081"
   }
 ]
